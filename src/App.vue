@@ -1,10 +1,21 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<template>
+  <div id="app">
+    <h1>Reusable Input with Dynamic Max Length</h1>
+    <InputWithMaxLength :initialMaxLength="15" />
+  </div>
+</template>
+
+<script>
+import InputWithMaxLength from "./views/InputWithMaxLength.vue";
+
+export default {
+  name: "App",
+  components: {
+    InputWithMaxLength,
+  },
+};
 </script>
 
-<template>
-
-</template>
 
 <style scoped>
 .logo {
